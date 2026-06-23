@@ -47,5 +47,19 @@ iii. Persistence: Enabling the wazuh-agent service to start on boot.
 # SIEM & XDR Capabilities Showcasing
 The lab currently demonstrates the following high-level SOC capabilities: In this section of the documentation, we provide a set of use cases to explore different Wazuh capabilities.
 
+---
 I. Vulnerability Detection: The Wazuh Vulnerability Detection module performs a software audit. It identifies vulnerabilities in the operating system and installed applications on monitored endpoints.
+
+## Vulnerability Dashboard Screenshot
+
+[![Vulnerability Detection Dashboard](<Screenshot 2026-04-29 203314.png>)](<Screenshot 2026-04-29 203314.png>)
+
+SOC judgement: The host has a high vulnerability exposure with 147 critical, 591 high, and 400 medium findings, mainly on MAZZI-NEW-HOST, so remediation should be treated as urgent, especially for Firefox, Windows 11, Wireshark, VirtualBox, and Node.js packages.
+
+---
+II. File Integrity Monitoring (FIM): The Wazuh File Integrity Monitoring module is configured to track changes in sensitive directories. Any modification to system-level files triggers an alert in the Wazuh Dashboard.
+
+## Configuration setting for FIM on Windows Endpoint
+[![Configuration setting for FIM](<Screenshot 2026-04-24 231235.png>)](<Screenshot 2026-04-24 231235.png>)
+
 
